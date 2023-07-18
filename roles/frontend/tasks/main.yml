@@ -50,4 +50,4 @@
   ansible.builtin.unarchive:
     scr: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
     dest: /usr/share/nginx/html
-    remote_scr:
+    remote_scr: yes
