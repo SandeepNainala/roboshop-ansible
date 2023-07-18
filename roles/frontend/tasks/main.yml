@@ -46,8 +46,3 @@
     path: /usr/share/nginx/html
     state: directory
 
-- name: download app content
-  ansible.builtin.unarchive:
-    scr: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
-    dest: /usr/share/nginx/html
-    remote_scr: yes
