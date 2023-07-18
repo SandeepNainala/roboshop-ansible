@@ -1,4 +1,4 @@
 - name: RoboShop Project
   hosts: all
   roles:
-   - "{{ roles_name }}}"
+   - "{{ role_name }}}"
