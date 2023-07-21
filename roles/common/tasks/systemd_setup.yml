@@ -8,12 +8,12 @@
 #  systemctl restart ${component} &>>$log_file
 #  func_stat_check $?
 
-- name: Setup SystemD Service
+- name: Setup SystemD Service file
   ansible.builtin.template:
-    scr: "{{component}}.service"
+    src: "{{component}}.service"
     dest: /etc/systemd/system/{{component}}.service
 
-- name: Start {{component}} service
+- name: Start {{ component }} service
   ansible.builtin.systemd:
     name: "{{ component }}"
     state: restarted
