@@ -5,7 +5,6 @@
   ansible.builtin.yum:
     name: nodejs
     state: installed
-    enable: true
 
 - name: Include app_prerequisites
   ansible.builtin.import_tasks:
