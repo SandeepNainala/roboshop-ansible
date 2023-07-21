@@ -1,2 +1,2 @@
 component: cart
-schema_setup: mongo
+#schema_setup: mongo
