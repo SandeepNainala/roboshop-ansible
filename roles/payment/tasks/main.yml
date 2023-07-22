@@ -1,4 +1,4 @@
-- name: Import common Python
+- name: Import Common Python
   ansible.builtin.import_role:
-    name_common:
-      tasks_from: python
+    name: common
+    tasks_from: python
