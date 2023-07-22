@@ -18,7 +18,7 @@
 - name: Install Python
   ansible.builtin.yum:
     name:
-      - python
+      - python36
       - gcc
       - python3-devel
     state: installed
@@ -31,8 +31,6 @@
   ansible.builtin.shell: pip3.6 install -r requirements.txt
   args:
     chdir: /app
-
-
 
 - name: Include schema setup
   ansible.builtin.import_tasks:
