@@ -34,6 +34,7 @@ scrape_configs:
           - name: tag:Monitor
             values: [ "true" ]
     relabel_configs:
+# ansible Jinja templates nothing but the loops
       {% for label in labels %}
 
       - source_labels: [ __meta_ec2_tag_{{ label.tag }} ]
